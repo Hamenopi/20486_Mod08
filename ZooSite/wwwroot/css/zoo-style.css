@@ -207,3 +207,51 @@
     background-color: #008484;
     color: #fff;
 }
+
+.photo-index-card {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 10px 5px 15px 18px;
+    padding-bottom: 25px;
+    width: 355px;
+    border: 1px solid #d6d4d4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info .form-field {
+    text-align: left;
+}
+
+    .info .form-field div {
+        width: 172px;
+        text-align: right;
+        float: right;
+    }
+
+.info label {
+    width: 118px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.info input {
+    border-radius: 2px;
+    line-height: 20px;
+    border: 1px solid #ccc6c6;
+}
+
+input.info input.submit-btn {
+    width: 100px;
+    margin-top: 12px;
+    height: 29px;
+    background-color: orange;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 4px #b77006;
+}
+
+    input.info input.submit-btn[disabled] {
+        opacity: 0.8;
+        background-color: whitesmoke;
+        box-shadow: none;
+    }
