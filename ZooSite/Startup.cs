@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ZooSite.Data;
+using ZooSite.Middleware;
 
 namespace ZooSite
 {
@@ -36,6 +37,8 @@ namespace ZooSite
             zooContext.Database.EnsureCreated();
 
             app.UseStaticFiles();
+
+            app.UseNodeModules(env.ContentRootPath);
 
             app.UseMvc(routes =>
             {
