@@ -32,7 +32,10 @@ namespace ZooSite
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ZooContext zooContext)
         {
             zooContext.Database.EnsureDeleted();
+
             zooContext.Database.EnsureCreated();
+
+            app.UseStaticFiles();
 
             app.UseMvc(routes =>
             {
