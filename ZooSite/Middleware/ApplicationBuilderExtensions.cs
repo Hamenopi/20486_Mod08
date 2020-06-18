@@ -12,7 +12,7 @@ namespace ZooSite.Middleware
     {
         public static IApplicationBuilder UseNodeModules(this IApplicationBuilder applicationBuilder, string root)
         {
-            var path = Path.Combine(root, "node_mpdules");
+            var path = Path.Combine(root, "node_modules");
             var fileProvider = new PhysicalFileProvider(path);
             var options = new StaticFileOptions();
             options.RequestPath = "/node_modules";
